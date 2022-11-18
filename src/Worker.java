@@ -21,9 +21,9 @@ public class Worker {
     public void start() {
         for (int i = 0; i < 100; i++) {
             if (i == 33) {
-                errorCallback.onError(" Task " + (i) + " is not done!");
+                errorCallback.onError(" Task " + i + " is not done!");
             } else {
-                callback.onDone(" Task " + (i) + " is done ");
+                callback.onDone(" Task " + i + " is done ");
             }
         }
 
